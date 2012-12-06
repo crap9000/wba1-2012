@@ -25,5 +25,10 @@
 			"title" : "HTML Basics",
 			"authors" : ["Dominik Schilling", "Bruno José Carvalho Gonzaga"]
 		}
+        "2012-12-06-html-basics2/index.html":
+		{
+			"title" : "HTML Basics 2",
+			"authors" : ["Sascha Wüstlich", "Aaron Reiher"]
+		}
 	}
 }
