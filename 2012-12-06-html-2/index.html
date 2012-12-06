@@ -45,10 +45,10 @@
 			</p>
 			<br/>
 			<p>
-			Laura Hermann<br/>
-			Marcel Holter</br>
+			Laura-Maria Hermann<br/>
+			Marcel "Ignatz" Holter</br>
 			<strong>//</strong></br>
-			Ben Wurth<br/>
+			Benedikt Wurth<br/>
 			Robert Kellermann
 			</p>
         </section>
@@ -97,18 +97,18 @@ width/height: Breite und Höhe des Bildes in Pixeln
 ### Bilder 2 - Beispiel
 #### Bild wird eingebunden und skaliert
 
-	<img src="table2.jpg" alt="Tabellenbeispiel verzerrt" width="800px" height="300px" />
+	<img src="html5.jpg" alt="HTML5 Logo verzerrt" width="800px" height="300px" />
 	
-<img src="table2.jpg" alt="Tabellenbeispiel verzerrt" width="800px" height="300px" />
+<img src="http://i50.tinypic.com/qwykuu.jpg" alt="Tabellenbeispiel verzerrt" width="800px" height="300px" />
 				</script>
 			</section>
 		</section>
 		
 		<section> <!-- Aufgabe 1 - Bilder -->
-<h1>Aufgabe 1</h1>
+<h2>Aufgabe 1</h2>
 Erstellen Sie ein neues HTML-Dokument mit dem HTML-Grundgerüst.<br/><br/>
-Fügen Sie ihrem HTML-Dokument das Bild wba_icon.jpg im Format
-200x300px aus dem Quellverzeichnis „wba/bilder“ hinzu.
+Fügen Sie ihrem HTML-Dokument das Bild "http://i50.tinypic.com/qwykuu.jpg" im Format
+200x300px hinzu.
 		</section>
 		
 		<section> <!-- Einfache Tabellen -->
@@ -221,10 +221,19 @@ Unterster Tabellenabschnitt (table foot)
 		</section>
 		
 		<section> <!-- Aufgabe 2 - Tabellen -->
-<h1>Aufgabe 1</h1>
-Erstellen Sie ein neues HTML-Dokument mit dem HTML-Grundgerüst.<br/><br/>
-Fügen Sie ihrem HTML-Dokument das Bild wba_icon.jpg im Format
-200x300px aus dem Quellverzeichnis „wba/bilder“ hinzu.
+<h2>Aufgabe 2.1</h2>
+Erstellen Sie eine Tabelle mit einer Reihe und zwei Spalten. In den Zellen
+sollte Ihr Vor- und Nachname stehen.<br/><br/>
+<h2>Aufgabe 2.2</h2>
+Erstellen Sie eine zweispaltige Tabelle, die Ihre Ausgaben fürs
+Weihnachtsgeschäft darstellen. Die Tabelle soll mit table head, table foot
+und table body aufgebaut werden. Im Kopf steht die Spaltenbezeichnung
+(Geschenkname, Ausgaben). In der letzten Zeile steht Gesamt und die
+gesamten Ausgaben in Euro. Die Tabelle soll mindestens vier Zeilen haben.
+		</section>
+
+		<section>
+<h2>&lt;table&gt;<br/>&lt;tr&gt;<br/>&lt;td&gt;<br/>&lt;thead&gt;<br/>&lt;th&gt;<br/>&lt;tbody&gt;<br/>&lt;tfoot&gt;<br/></h2>
 		</section>
 		
 		<section> <!-- Formulare -->
@@ -359,29 +368,48 @@ Das ist der Fall.
 			
 		</section>
 		
+		<section> <!-- Aufgabe 2 - Tabellen -->
+<h2>Aufgabe 3.1</h2>
+Erstellen Sie ein Formular zur Eingabe eines Benutzernamens und eines
+Passworts. (Passwort-Eingabe soll nicht sichtbar sein!)<br/><br/>
+<h2>Aufgabe 3.2</h2>
+Erweitern Sie ihr Formular aus Aufgabe 2.1, indem Sie
+Auswahlmöglichkeiten für Geschlecht und Hobbys hinzufügen. Wählen Sie
+jeweils geeignete „input“-Typen.<br/><br/>
+<h2>Aufgabe 3.3</h2>
+Erweitern Sie ihr Formular aus Aufgabe 2.2 mit je einem Button zum
+„Abschicken“ und zum „Zurücksetzen“ ihres Formulars.
+		</section>
+		
+		
+		
+		<section>
+		<p>
+		
+<h2>&lt;form&gt;<br/>&lt;input&gt;<br/>&lt;select&gt;<br/>&lt;option&gt;<br/>&lt;textarea&gt;</h2>
+
+		</p>
+		</section>
+		
 		<section> <!-- Ausblick XHTML/HTML5 -->
 			<section>
 <h3>Ausblick 1 - XHTML</h3>
 <h4>XHTML (Extensible HyperText Markup Language)</h4>
 
 <ul>
-	<li>XML-gerechtes HTML</li>
-	<li>Definiert durch <strong> XML (Extensible Markup Language)</strong> statt <strong>SGML (Standard Generalized Markup Language)</strong></li>
-- XML-gerechtes HTML
-
-- Definiert durch XML(Extensible Markup Language) statt SGML(Standard Generalized Markup Language)
-
-- Syntaktisch kompatibel zu wichtigen XML-Standardsprachen(SVG, WML, SMIL)
-
-- strikter als HTML(Code muss „sauber“ sein: End-Tags dürfen nicht vergessen werden wie in HTML)
-<!-- HIER FEHLT NOCH EINIGES -->
-
+	<li><strong>XML (Extensible Markup Language)</strong>-gerechtes HTML</li>
+	<li>strikter als HTML (Code muss "sauber" sein: End-Tags dürfen nicht vergessen werden wie in HTML)</li>
+	<li>Definiert durch XML, dadurch kompatibel mit anderen XML-Anwendungen
+		<ul><li>XML ist für Maschinen leichter lesbar</li></ul>
+	</li>
+	<li>Endung ist <strong>.xhtml</strong> statt .html</li>
+	
 
 			</section>
 			
 			<section>
 <h3>Ausblick 2 - HTML5</h3>
-<h4>HTML5 (Nachfolger von HTML 4.01 und XHTML 1.0)</h4>
+<h4>HTML5 (Nachfolger von HTML 4.01)</h4>
 
 <ul>
 	<li>Fortführend von HTML / Ziel: HTML neu erfinden</li>
@@ -391,19 +419,23 @@ Das ist der Fall.
 </ul>
 			</section>
 
-		<section>
-<h3>Ausblick 3 - HTML5 Browsergame "Browserquest"</h3>
-<img src="browserquest.jpg" height="400px" /><br/>
-<a href="http://browserquest.mozilla.org/" target="_blank">browserquest.mozilla.org</a><br/>
-<a href="https://github.com/mozilla/BrowserQuest" target="_blank">github.com/mozilla/BrowserQuest</a>
+			<section>
+	<h3>Ausblick 3 - HTML5 Browsergame "Browserquest"</h3>
+	<img src="browserquest.jpg" height="400px" /><br/>
+	<a href="http://browserquest.mozilla.org/" target="_blank">browserquest.mozilla.org</a><br/>
+	<a href="https://github.com/mozilla/BrowserQuest" target="_blank">github.com/mozilla/BrowserQuest</a>
+			</section>
+			
+			<section>
+	<h3>Ausblick 4 - HTML5 CanvasMol</h3>
+	<img src="canvasmol.jpg" height="400px" /><br/>
+	<a href="http://alteredqualia.com/canvasmol" target="_blank">alteredqualia.com/canvasmol</a>
+			</section>
+			
 		</section>
 		
 		<section>
-<h3>Ausblick 4 - HTML5 CanvasMol</h3>
-<img src="canvasmol.jpg" height="400px" /><br/>
-<a href="http://alteredqualia.com/canvasmol" target="_blank">alteredqualia.com/canvasmol</a>
-		</section>
-			
+		<h1>Noch Fragen?</h1>
 		</section>
 		
       </div>
