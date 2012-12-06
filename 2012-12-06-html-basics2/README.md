@@ -7,7 +7,7 @@ ___
 1. Was ist HTML?
 2. Geschichte von HTML
 3. Grungerüst
-4. <div> und <span>
+4. <span><</span>div> und <span><</span>span>
 5. Textformatierung
-6. Hyperlinks
+6. Verweise
 7. Bilder
