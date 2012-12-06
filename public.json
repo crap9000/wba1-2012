@@ -36,6 +36,12 @@
 		{
 			"title" : "HTML Basics 2",
 			"authors" : ["Sascha Wüstlich", "Aaron Reiher"]
+		},
+
+		"2012-12-06-html-2/index.html":
+		{
+			"title" : "HTML Advanced",
+			"authors" : ["Laura Hermann", "Marcel Holter", "Benedikt Wurth", "Robert Kellermann"]
 		}
 	}
 }
