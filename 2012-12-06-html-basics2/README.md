@@ -1,4 +1,4 @@
-# wba1-2012
+# WBA1-2012
 ___
 
 ## Einführung HTML (Sascha Wüstlich, Aaron Reiher)
