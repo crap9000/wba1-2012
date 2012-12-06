@@ -1,4 +1,4 @@
 wba1-2012
 =========
 
-Hallo mein erster Eintrag
+Web-basierte Anwendungen 2012
