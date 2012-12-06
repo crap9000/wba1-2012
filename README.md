@@ -1,13 +1,6 @@
-<<<<<<< HEAD
 wba1-2012
 =========
 
 Web-basierte Anwendungen 2012
 
-BLA BLA BLA BLÖA BLAöksajäölfjasäodfjAÄODHFOQÖWEHFÖOASDGÖOIAWHDÄFÄPQIEFHÖ AHFASHDF GHAÖGHAS ÖGÄAO
-=======
-wba1-2012
-=========
-
-Hallo mein erster Eintrag
->>>>>>> c1ccce6ad38777c7d6b123dff6e510034cb96280
+Slides, die im Master Branch sind und in der `public.json` [eingetragen](https://github.com/fh-koeln/wba1-2012/wiki/Git-CheatSheet#wiki-gh-pages) wurden, können unter [fh-koeln.github.com/wba1-2012/](http://fh-koeln.github.com/wba1-2012/) online abgerufen werden.
