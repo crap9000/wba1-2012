@@ -43,11 +43,9 @@
 			<div class="slides">
 
 				<section id="mainpage">
-					<h1>WBA1</h1>
-					<h2>Medieninformatik</h2>
-					<h3 style="color:#77CC00;">CSS-Basics</h3>
-					<p>
-						Selin &Ouml;zt&uuml;rk</br>
+					<h1>CSS-Basics</h1>
+					<p style="margin-top:200px;">
+						Selin &Ouml;zt&uuml;rk <a href="https://github.com/soeztuer">Github: soeztuer</a><br />
 						Uwe M&uuml;sse <a href="http://github.com/mirar">Github: mirar</a>
 					</p>
 					
@@ -65,44 +63,80 @@
 						<li>Selektoren</li>
                         <li>In-Line-/Block-Elemente</li>
 						<li>Boxmodell</li>
+                        <li>Aufgabe</li>
+                        <li>Links</li>
 					</ul>
 				</section>
             <!-- Konzept -->
 				<section>
-					<h2>Konzept</h2>
-					<ul>
-						<li>Trennung Struktur - Design</li>
-						<li>Flexibilit&auml;t
-                            <ul>
-                                <li>Barrierefreiheit</li>  
-                                <li>Wiederverwendbarkeit</li>
-                                <li>Vererbung</li>
-                            </ul>                            
-                        </li>
-					</ul>
-                    <img alt="Aufbau CSS-Anweisung" height=50% width=60% src="img/css.jpg">
-
-					<aside class="notes">
-						<dl>
-                            <dt>Trennung Struktur - Design</dt>
+                    <section>
+                        <h2>Konzept</h2>
+                        <ul>
+                            <li>Trennung Struktur - Design</li>
+                            <li>Flexibilit&auml;t
                                 <ul>
-                                        <li>HTML: Struktur</li>
-                                        <li>CSS: Design</li>
-                                </ul>
-                            <dt>Flexibilit&auml;t - Barrierefreiheit</dt>
-                                <ul>
-                                        <li>Anpassung Kontrast - Schriftgr&ouml;sse</li>
-                                </ul>
-                            <dt>Flexibilit&auml;t - Wiedervendbarkeit</dt>
-                                <ul>
-                                        <li>1 Design - unterschiedliche Kunden(Bsp: Farben)</li>
-                                </ul>
-                            <dt>Flexibilit&auml;t - Vererbung</dt>
-                                <ul>
-                                        <li>Definition bei "Parent" wirkt sich auf "Child" aus</li>
-                                </ul>
-					   </dl>
-					</aside>
+                                    <li>Barrierefreiheit</li>  
+                                    <li>Wiederverwendbarkeit</li>
+                                    <li>Vererbung</li>
+                                </ul>                            
+                            </li>
+                        </ul>
+                        <img alt="Aufbau CSS-Anweisung" height=50% width=60% src="img/css.jpg">
+    
+                        <aside class="notes">
+                            <dl>
+                                <dt>Trennung Struktur - Design</dt>
+                                    <ul>
+                                            <li>HTML: Struktur</li>
+                                            <li>CSS: Design</li>
+                                    </ul>
+                                <dt>Flexibilit&auml;t - Barrierefreiheit</dt>
+                                    <ul>
+                                            <li>Anpassung Kontrast - Schriftgr&ouml;sse</li>
+                                    </ul>
+                                <dt>Flexibilit&auml;t - Wiedervendbarkeit</dt>
+                                    <ul>
+                                            <li>1 Design - unterschiedliche Kunden(Bsp: Farben)</li>
+                                    </ul>
+                                <dt>Flexibilit&auml;t - Vererbung</dt>
+                                    <ul>
+                                            <li>Definition bei "Parent" wirkt sich auf "Child" aus</li>
+                                    </ul>
+                           </dl>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Beispieleigenschaften</h2>
+                        <table>
+                            <tr>
+                                <td style="width: 15em">
+                                    <ul>
+                                        <li>color</li>
+                                        <li>background-color</li>
+                                        <li>font-size</li>
+                                        <li>border</li>
+                                        <li>text-align</li>
+                                        <li>line-height</li>
+                                        <li>height</li>
+                                        <li>width</li>
+                                    </ul>
+                                </td>
+                                <td style="width: 15em">
+                                    <ul>
+                                        <li>float</li>
+                                        <li>clear</li>
+                                        <li>position</li>
+                                        <li>visibility</li>
+                                        <li>margin</li>
+                                        <li>padding</li>
+                                        <li>height</li>
+                                        <li>width</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                    </section>
 				</section>
         
             <!-- Einbindungsmoeglichkeiten -->
@@ -281,10 +315,10 @@ div &gt; h1 {
         
         <!-- Beispiele -->
 				<section class="fullscreen">
-                    <h2>Beispiel</h2>
+                    <h2>Aufgabe</h2>
                     <div>
                         <pre>
-                            <code contenteditable="true">&lt;body>
+                            <code contenteditable="true">&lt;body&gt;
    &lt;h1 id="title"&gt;Layout CSS&lt;/h1&gt;
     
     &lt;div id="border"&gt;&lt;/div&gt;
