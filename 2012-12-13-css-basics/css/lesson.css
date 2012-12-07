@@ -1,0 +1,69 @@
+/**
+ * Anpassung fuer Praesentation
+ */
+
+
+.reveal .slides{
+	margin-top: -340px;
+}
+
+.reveal .slides>section,
+.reveal .slides>section>section {
+	min-height: 640px;
+    background: none;
+}
+
+#mainpage {
+	background: url("../img/vieldrin_big.png") no-repeat bottom right;
+}
+
+
+
+/**
+ * Online-Preview
+ */
+
+.example {
+	color: #000;
+	width: 100%;	
+}
+
+.htmlcode {
+	background-color: #fff;
+	width: 49%;
+	float: left;
+	height: 380px;	
+}
+
+.preview {
+	background-color: #fff;
+	width: 49%;
+	float: right;
+	height: 380px;
+}
+
+.cssedit {
+	margin-top: 20px !important;
+	float: left;
+	background-color: #fff;
+	width: 49%;
+	height: 80px;
+}
+
+.reveal pre {
+	margin: 0.5em;
+	box-shadow: none;
+}
+
+.reveal code {
+    font-family: 'Menlo','Monaco',monospace;
+    margin-right: 18px;
+    padding: 1em;
+}
+
+.home{
+    position:fixed;
+    bottom:-100px;
+    left:10px;
+}
+

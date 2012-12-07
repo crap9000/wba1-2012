@@ -4,27 +4,34 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>WBA1 - Lehreinheit</title>
+		<title>WBA1</title>
 
-		<meta name="description" content="Lehreinheit">
-		<meta name="author" content="Student">
+		<meta name="description" content="reveal.js Template for WBA presentations">
+		<meta name="author" content="Tim Schneider">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+		
 		<link rel="stylesheet" href="../revealjs-template/css/reveal.css">
 		<link rel="stylesheet" href="../revealjs-template/css/theme/wba.css" id="theme">
+		
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="../revealjs-template/lib/css/zenburn.css">
+        
+        <!-- eigenes Layout fuer Praesentation -->
+        <link rel="stylesheet" href="css/lesson.css" id="own_theme">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
 			document.write( '<link rel="stylesheet" href="../revealjs-template/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
-
+		
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		
 		<!--[if lt IE 9]>
-		<script src="../revealjs-template/lib/js/html5shiv.js"></script>
+		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
 
@@ -35,20 +42,68 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-				<section>
-					<h1>WBA1 - Lehreinheit</h1>
+				<section id="mainpage">
+					<h1>WBA1</h1>
 					<h2>Medieninformatik</h2>
-					<p>November 29th, 2012</p>
+					<h3>CSS-Basics</h3>
 					<p>
-						Studiengang Medieninformatik an der Fachhochschule Köln<br/>
-						Campus Gummersbach
+						Selin &Ouml;zt&uuml;rk</br>
+						Uwe M&uuml;sse
 					</p>
-					<p>
-						Student X<br />
-						http://github.com/...
-					</p>
+					
+					<p>13. Dezember 2012</p>
 				</section>
 
+				<section>
+					<h2>CSS</h2>
+					<p>
+						&Uuml;bersicht
+					</p>
+					<ul>
+						<li>Konzept</li>
+						<li>Einbindungsm&ouml;glichkeiten</li>
+						<li>Selektoren</li>
+                        <li>In-Line-/Block-Elemente</li>
+						<li>Boxmodell</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Konzept</h2>
+					<ul>
+						<li>Trennung Struktur - Design</li>
+						<li>Flexibilit&auml;t
+                            <ul>
+                                <li>Barrierefreiheit</li>  
+                                <li>Wiederverwendbarkeit</li>
+                            </ul>                            
+                        </li>
+					</ul>
+
+					<aside class="notes">
+						<dl>
+                            <dt>Trennung Struktur - Design</dt>
+                                <dd>HTML: Struktur</dd>
+                                <dd>CSS: Design</dd>
+                            <dt>Flexibilit&auml;t - Barrierefreiheit</dt>
+                                <dd>Anpassung Kontrast - Schriftgr&ouml;sse</dd>
+                            <dt>Flexibilit&auml;t - Wiedervendbarkeit</dt>
+                                <dd>1 Design - unterschiedliche Kunden(Bsp: Farben)</dd>
+					   </dl>
+					</aside>
+				</section>
+
+				<section>
+					<h2>Beispiele</h2>
+					<div class="example">
+						<div class="htmlcode"><pre><code>html</code></pre>
+						</div>
+						<div class="preview"><pre><code>preview</code></pre>
+						</div>
+						<div class="cssedit"><pre><code>css_edit</code></pre>
+						</div>
+					</div>
+				</section>
 
 			</div>
 
@@ -58,6 +113,7 @@
 		<script src="../revealjs-template/js/reveal.min.js"></script>
 
 		<script>
+
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -75,11 +131,12 @@
 					{ src: '../revealjs-template/lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '../revealjs-template/lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '../revealjs-template/plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
-					{ src: '../revealjs-template/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
 					{ src: '../revealjs-template/plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
 				]
 			});
 
 		</script>
+
 	</body>
 </html>

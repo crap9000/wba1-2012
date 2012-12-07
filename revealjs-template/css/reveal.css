@@ -123,7 +123,8 @@ body {
 }
 
 .reveal ol,
-.reveal ul {
+.reveal ul 
+.reveal dl dt{
 	display: inline-block;
 
 	text-align: left;
@@ -149,7 +150,8 @@ body {
 .reveal ul ul,
 .reveal ul ol,
 .reveal ol ol,
-.reveal ol ul {
+.reveal ol ul, 
+.reveal dl dt dd{
 	display: block;
 	margin-left: 40px;
 }
