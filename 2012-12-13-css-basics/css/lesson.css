@@ -13,11 +13,21 @@
     background: none;
 }
 
-#mainpage {
-	background: url("../img/vieldrin_big.png") no-repeat bottom right;
+section:first-child h2 {
+    background-color: #000;
+    color: #77CC00;
+    font-size: 1.7em;
+    line-height: 1em;
+    margin-bottom: 30px;
+    padding: 0.3em 0 0.1em;
+    text-align: left;
+    text-transform: none;
 }
 
 
+#mainpage {
+	background: url("../img/vieldrin_big.png") no-repeat bottom right;
+}
 
 /**
  * Online-Preview
@@ -67,3 +77,8 @@
     left:10px;
 }
 
+.reveal section pre #examplehtml {
+    padding: 0 !important;
+    margin: 0 !important;
+    text.align-left !important;
+}
