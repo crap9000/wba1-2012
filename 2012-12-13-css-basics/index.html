@@ -281,10 +281,10 @@ div &gt; h1 {
         
         <!-- Beispiele -->
 				<section class="fullscreen">
-                    <section>
-                        <h2>Beispiel</h2>
-                        <div>
-                            <pre><code contenteditable="true">&lt;body>
+                    <h2>Beispiel</h2>
+                    <div>
+                        <pre>
+                            <code contenteditable="true">&lt;body>
    &lt;h1 id="title"&gt;Layout CSS&lt;/h1&gt;
     
     &lt;div id="border"&gt;&lt;/div&gt;
@@ -303,32 +303,9 @@ div &gt; h1 {
         &lt;/p&gt;
         &lt;p&gt;Schick, oder?!&lt;/p&gt;
     &lt;/div&gt;
-&lt;/body&gt;
-                                </code>
-                            </pre>
-                        </div>
-                        <iframe id="preview" class="preview"></iframe>
-                        <script>
-                          var delay;
-                          var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-                            mode: 'text/html',
-                            tabMode: 'indent',
-                            onChange: function() {
-                              clearTimeout(delay);
-                              delay = setTimeout(updatePreview, 300);
-                            }
-                          });
-                          
-                          function updatePreview() {
-                            var previewFrame = document.getElementById('preview');
-                            var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
-                            preview.open();
-                            preview.write(editor.getValue());
-                            preview.close();
-                          }
-                          setTimeout(updatePreview, 300);
-                        </script>
-                    </section>
+&lt;/body&gt;</code>
+                        </pre>
+                    </div>
 				</section>
         
                 <section>
