@@ -76,9 +76,3 @@ section:first-child h2 {
     bottom:-100px;
     left:10px;
 }
-
-.reveal section pre #examplehtml {
-    padding: 0 !important;
-    margin: 0 !important;
-    text.align-left !important;
-}
