@@ -271,6 +271,7 @@ div &gt; h1 {
                 <section>
                     <h2>In-Line-/Block-Elemente</h2>
                     
+                    
                 </section>
                 
         <!-- Boxmodell -->
@@ -281,51 +282,52 @@ div &gt; h1 {
         <!-- Beispiele -->
 				<section class="fullscreen">
                     <section>
-                        <h2>Beispiele</h2>
-                        <div class="htmlcode">
-                            <pre>
-                                <code>
-&lt;body&gt;
-    &lt;h1 id="title"&gt;Layout CSS&lt;/h1&gt;
-
+                        <h2>Beispiel</h2>
+                        <div>
+                            <pre><code contenteditable="true">&lt;body>
+   &lt;h1 id="title"&gt;Layout CSS&lt;/h1&gt;
+    
     &lt;div id="border"&gt;&lt;/div&gt;
-
+    
     &lt;ul id="navi"&gt;
-        &lt;li class="act"&gt;&lt;a href="#" title="Home"&gt;           Home&lt;/a&gt;&lt;/li&gt;
-        &lt;li>&lt;a href="#" title="Impressum"&gt;                  Impressum&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;&lt;a href="#" title="Home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="ownlink" href="#" title="Impressum"&gt;Impressum&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-
+    
     &lt;div id="content"&gt;
-        &lt;h2>Home&lt;/h2&gt;
-
-        &lt;p&gt;Startseite mit CSS Layout.&lt;/p&gt;
+        &lt;h2&gt;Home&lt;/h2&gt;
+    
+        &lt;p&gt;
+            Hallo, sie befinden sich hier auf der Startseite einer ansprechenden 
+            Seite mit CSS Layout.
+        &lt;/p&gt;
         &lt;p&gt;Schick, oder?!&lt;/p&gt;
     &lt;/div&gt;
 &lt;/body&gt;
                                 </code>
                             </pre>
                         </div>
-                        <div class="cssedit"><pre><code>css_edit</code></pre>
-						</div>
-                    </section>
-                    <section>
-						<div class="preview">
-                            <h1 id="title">Layout CSS</h1>
-
-                            <div id="border"></div>
-                    
-                            <ul id="navi">
-                                <li class="active"><a class="ownlink" href="#" title="Home">Home</a></li>
-                                <li><a class="ownlink" href="#" title="Impressum">Impressum</a></li>
-                            </ul>
-                    
-                            <div id="content">
-                                <h2>Home</h2>
-                    
-                                <p>Hallo, sie befinden sich hier auf der Startseite einer ansprechenden Seite mit CSS Layout.</p>
-                                <p>Schick, oder?!</p>
-                            </div>
-						</div>
+                        <iframe id="preview" class="preview"></iframe>
+                        <script>
+                          var delay;
+                          var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+                            mode: 'text/html',
+                            tabMode: 'indent',
+                            onChange: function() {
+                              clearTimeout(delay);
+                              delay = setTimeout(updatePreview, 300);
+                            }
+                          });
+                          
+                          function updatePreview() {
+                            var previewFrame = document.getElementById('preview');
+                            var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+                            preview.open();
+                            preview.write(editor.getValue());
+                            preview.close();
+                          }
+                          setTimeout(updatePreview, 300);
+                        </script>
                     </section>
 				</section>
         
