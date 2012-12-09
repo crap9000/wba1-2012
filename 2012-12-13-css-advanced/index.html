@@ -1,13 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 
 	<head>
 		<meta charset="utf-8">
 
-		<title>WBA1 - Lehreinheit</title>
+		<title>WBA1 - CSS Advanced</title>
 
-		<meta name="description" content="Lehreinheit">
-		<meta name="author" content="Student">
+		<meta name="description" content="CSS Advanced">
+		<meta name="author" content="Sascha Rothkopf">
+        <meta name="author" content="Armin Weinrebe">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -20,12 +21,33 @@
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="../revealjs-template/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+            var document = this.document;
+            var window = this.window;
+			document.write('<link rel="stylesheet" href="../revealjs-template/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
 		</script>
 
 		<!--[if lt IE 9]>
 		<script src="../revealjs-template/lib/js/html5shiv.js"></script>
 		<![endif]-->
+        
+        <script type="text/javascript">
+            var datum = new Date();
+            var day = datum.getDate();
+            var monat1 = datum.getMonth();
+            var year = datum.getFullYear();
+            var monat2 = new Array("Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember");
+        </script>
+        
+        <style>
+        .reveal.cube .slides section:not(.stack):before {
+            background: rgba(0,0,0,0.9);
+        }
+    
+        .reveal.page .slides section:not(.stack):before {
+            background: rgba(0,0,0,0.9);
+        }
+        </style>
+                    
 	</head>
 
 	<body>
@@ -36,20 +58,96 @@
 			<div class="slides">
 
 				<section>
-					<h1>WBA1 - Lehreinheit</h1>
+					<h1>WBA1 - CSS Advanced</h1>
 					<h2>Medieninformatik</h2>
-					<p>November 29th, 2012</p>
+					<p>
+                        <script type="text/javascript">
+                            document.write("" + day + ". " + monat2[monat1] + " " + year);
+                        </script>
+                    </p>
 					<p>
 						Studiengang Medieninformatik an der Fachhochschule Köln<br/>
 						Campus Gummersbach
 					</p>
 					<p>
-						Student X<br />
-						http://github.com/...
+                        Gruppe 1: <br />
+						<a href="https://github.com/veN1337" target="_blank">Sascha Rothkopf</a><br />
+						<a href="https://github.com/mi1112" target="_blank">Armin Weinrebe</a><br />
+                        <br />
+                        Gruppe 2: <br />
+                        <a href="https://github.com/dimitrikiselev" target="_blank">Dimitri Kiselev</a><br />
+						<a href="https://github.com/skisser" target="_blank">Sam Kisser</a><br />
 					</p>
 				</section>
-
-
+                
+                <section>
+                    <h1>Inhalte & Ablauf</h1>
+                    <p style="font-size: 1em;">Vortrag und Beispiele zu:</p>
+                    <ul style="font-size: 0.8em;">
+                        <li class="fragment">Box-Modell & Element Typen</li>
+                        <li class="fragment">Positionierung</li>
+                        <li class="fragment">Pseudoklassen & Pseudoelemente</li>
+                        <li class="fragment">Kombinatoren</li>						
+                    </ul>
+                    <br /><br />
+                    <p  style="font-size: 1em;" class="fragment">
+                        Zeit zum ausprobieren
+                        <br />
+                        bzw. Übung in Form eines DropDown Menüs
+                    </p>
+                </section>
+                
+                <section>
+                    <h1>Lernziele</h1>
+                    <ul>
+                        <li class="fragment">Verständnis des Box-Modells</li>
+                        <li class="fragment">korrekte Positionierung</li>
+						<li class="fragment">richtige Verwendung von Pseudoklassen</li>
+                    </ul>                
+                </section>
+				
+				<section> <!-- Box Modell -->
+					<section>
+						<h2><strong>1. </strong>Box-Modell</h2>
+						<p>
+							TODO
+						</p>
+					</section>
+					<section>
+						<h2><strong>1.1. </strong>Grundlagen</h2>
+						<p>
+							TODO
+						</p>
+					</section>
+				</section>
+				
+				<section> <!-- Positionierung -->
+					<section>
+						<h2><strong>2. </strong>Postionierung</h2>
+						<p>
+							TODO
+						</p>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2><strong>3. </strong>Pseudoklassen</h2>
+						<p>
+							TODO
+						</p>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2><strong>4. </strong>Kombinatoren</h2>
+						<p>
+							TODO
+						</p>
+					</section>
+				</section>
+				
 			</div>
 
 		</div>
@@ -64,9 +162,9 @@
 				controls: true,
 				progress: true,
 				history: true,
-
+				
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
